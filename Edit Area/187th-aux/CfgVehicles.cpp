@@ -676,9 +676,11 @@ class CfgVehicles
 		{
 			class afterburner_functions
 			{
-				file = "187th-aux\Functions\afterburners";
+				file = "187th-aux\Functions\afterburners"
 				class afterburners_turn_on;
-				class afterburners_turn_off;
+					{"187th-aux\Functions\afterburners\fn_afterburners_turn_on.sqf"};
+				class afterburners_turn_off
+					{"187th-aux\Functions\afterburners\fn_afterburners_turn_off.sqf"};
 			};
 		};
 	};
@@ -727,7 +729,7 @@ class CfgVehicles
 			class rampOpen
 			{
 				available=0;
-				showWindow=0;
+				showWindow=1;
 				displayName="Ramp Open";
 				position="pilotview";
 				radius=9;
@@ -738,7 +740,7 @@ class CfgVehicles
 			class rampClose
 			{
 				available=0;
-				showWindow=0;
+				showWindow=1;
 				displayName="Ramp Close";
 				position="pilotview";
 				radius=9;
@@ -748,7 +750,7 @@ class CfgVehicles
 			};
 			class afterburners_turn_on
 			{ //this no worky...
-				showWindow=0;
+				showWindow=1;
 				hideOnUse=0;
 				priority=9;
 				role=0;
@@ -761,10 +763,10 @@ class CfgVehicles
 			};
 			class afterburners_turn_off
 			{ //this no worky...
-				showWindow=0;
+				showWindow=1;
 				hideOnUse=0;
 				priority=9;
-				role=0;
+				role=1;
 				displayName="Deactivate Impulse";
 				position="pilotview";
 				radius=6;
